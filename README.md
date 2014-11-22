@@ -20,14 +20,14 @@ Features
 How to use?
 -----------
 
-Include the getNotified.css in your page:
+Include the ```getNotified.css``` in your page:
 
 ```css
 <link type="text/css" rel="stylesheet" href="getNotified.css">
 ```
 
 
-Include the getNotified.js after the jQuery script tag:
+Include the ```getNotified.js``` after the jQuery script tag:
 
 ```html
 <script src="jquery.js"></script>
@@ -35,14 +35,14 @@ Include the getNotified.js after the jQuery script tag:
 ```
 
 
-Add a div having .getNotifiedBox class to your html code:
+Add a ```div``` having ```.getNotifiedBox``` class to your html code:
 
 ```html
 <div class='getNotifiedBox'></div>
 ```
 
 
-In a script tag ```<script>``` or in your page .js file, call the function getNotified(); for the target element
+In a script tag ```<script>``` or in your page ```.js``` file, call the function getNotified(); for the target element
 
 ```javascript
 $(".notify").getNotified();
@@ -51,7 +51,7 @@ $(".notify").getNotified();
 
 You can customize getNotified simply by passing arguments:
 
-```jquery
+```javascript
 $(".notify").getNotified({
     // Animation Speed (in MilliSeconds)
     velocity: 500,
