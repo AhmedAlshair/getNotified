@@ -1,0 +1,108 @@
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Get Notified jQuery Plugin | Documentations & Demo</title>
+
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+
+    <!--// GetNotified Styles Linking //-->
+    <link type="text/css" rel="stylesheet" href="css/getNotified.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>GetNotified jQuery Plugin</h1>
+    </header>
+
+    <section>
+        <h2>A simple and effective jQuery plugin to view notification on your website.</h2>
+        <br>
+        <h2>Features</h2>
+        <ul>
+            <li>Easy to integrate in your website pages.</li>
+            <li>All you need are two simple lines of code.</li>
+            <li>Felixible options to take control of what you need to show.</li>
+            <li>Separate stylesheet for the plugin, so you can edit styles easily.</li>
+            <li>Promising to add more features and options in the upcoming versions.</li>
+        </ul>
+    </section>
+    <section>
+        <h2>How to use?</h2>
+        <p>Include the getNotified.css in your page:</p>
+        <pre class="csharpcode">
+<span class="kwrd">&lt;</span><span class="html">link</span> <span class="attr">type</span><span class="kwrd">="text/css"</span> <span class="attr">rel</span><span class="kwrd">="stylesheet"</span> <span class="attr">href</span><span class="kwrd">="getNotified.css"</span><span class="kwrd">&gt;</span></pre>
+
+        <p>Include the getNotified.js after the jQuery script tag:</p>
+        <pre class="csharpcode">
+<span class="kwrd">&lt;</span><span class="html">script</span> <span class="attr">src</span><span class="kwrd">="jquery.js"</span><span class="kwrd">&gt;&lt;/</span><span class="html">script</span><span class="kwrd">&gt;</span>
+<span class="kwrd">&lt;</span><span class="html">script</span> <span class="attr">src</span><span class="kwrd"><span class="str"><span class="kwrd">="getNotified.js"</span>&gt;<span class="kwrd">&lt;/</span><span class="html">script</span><span class="kwrd">&gt;</span></pre>
+
+        <p>In a script tag
+            <<span class="html">script</span><span class="kwrd">&gt;</span> or in your page .js file, call the function getNotified(); for the target element</p>
+        <pre class="csharpcode">
+$(".notify").<span class="kwrd11">getNotified()</span>;</pre>
+
+        <p>You can customize getNotified simply by passing arguments:</p>
+
+        <pre class="csharpcode">
+$(".notify").<span class="kwrd11">getNotified({</span>
+    <span class="comment">// Animation Speed (in MilliSeconds)</span>
+    velocity: <span class="kwrd11">500</span>,
+    <span class="comment">// Notification Position: "bottom" or "top"</span>
+    position: <span class="kwrd11">"top"</span>,
+    <span class="comment">// Notification Content: h1 Title</span>
+    title: <span class="kwrd11">"GetNotified Title"</span>,
+    <span class="comment">// Notification Content: h2 Title</span>
+    subtitle: <span class="kwrd11">"GetNotified Subtitle"</span>,
+    <span class="comment">// Notification Type: "success" or "warning"</span>
+    type: <span class="kwrd11">"success"</span>,
+    <span class="comment">// Delay Before Closing the Box (in MilliSeconds)</span>
+    delay: <span class="kwrd11">3200</span>
+<span class="kwrd11">})</span>;</pre>
+
+    </section>
+    <section>
+        <h2>Test GetNotified</h2>
+        <div class='getNotifiedBox'></div>
+        <button class="notify">GetNotified Test</button>
+        
+        <h2>Get support and share your feedback</h2>
+        <a href="https://github.com/AhmedAlShair" target="_blank">github.com/AhmedAlShair</a>
+        
+    </section>
+
+    <footer>
+        GetNotified jQuery Plugin - 2014
+    </footer>
+
+   
+    <!--Scripts-->
+    <script src="js/jquery.js"></script>
+    <script src="js/getNotified.js"></script>
+
+    <script>
+        $(document).ready(function () {
+
+            // GetNotified //
+            $(".notify").getNotified({
+                // Animation Speed (in MilliSeconds)
+                velocity: 500,
+                // Notification Position: "bottom" or "top"
+                position: "top",
+                // Notification Content: h1 Title
+                title: "Voilà!",
+                // Notification Content: h2 Title
+                subtitle: "GetNotified is making your website notifications awesome",
+                // Notification Type: "success" or "warning"
+                type: "success",
+                // Delay Before Closing the Box (in MilliSeconds)
+                delay: 3200
+            });
+
+        });
+    </script>
+</body>
+
+</html>

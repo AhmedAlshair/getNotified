@@ -1,0 +1,145 @@
+html,
+body {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+body {
+    font-family: Arial;
+    color: #666;
+}
+h1,
+h2,
+h3 {
+    font-weight: normal;
+}
+p {
+    color: #666;
+}
+
+header {
+    height: 185px;
+    padding: 0 75px;
+    margin: 0 0 10px 0;
+    background: #333;
+    line-height: 200px;
+}
+
+header h1 {
+    color: #fff !important;
+}
+
+section {
+    width: 85%;
+    margin: 0 auto;
+    padding: 15px 25px;
+}
+
+section h1, section h2, section h3 {
+    color: #555;
+}
+
+pre {
+    background-color: rgba(238, 238, 238, 0.3) !important;
+    padding: 20px 30px;
+    font-size: 10pt !important;
+}
+
+.notify {
+    display: block;
+    margin: 30px auto 50px auto;
+    width: 300px;
+    height: 55px;
+    background: #eee;
+    border: none;
+    border-radius: 6px;
+    line-height: 55px;
+    font-size: 14pt;
+    color: #444;
+    -webkit-transition: 0.5s all ease;
+    transition: 0.5s all ease;
+    cursor: pointer;
+}
+.notify:hover {
+    background: #ddd;
+    color: #333;
+}
+
+a {
+    padding: 5px 0;
+    text-decoration: none;
+    color: #999;
+    font-size: 1.1rem;
+}
+
+a:hover {
+    text-decoration: none;
+    color: #666;
+    border-bottom: 1px solid #bbb;
+}
+
+footer {
+    height: 100px;
+    background: #333;
+    margin: 75px 0 0 0;
+    color: #fff;
+    line-height: 100px;
+    text-align: center;
+}
+
+/*Code Styling*/
+
+.csharpcode,
+.csharpcode pre {
+    font-size: small;
+    color: black;
+    font-family: Consolas, "Courier New", Courier, Monospace;
+    background-color: #ffffff
+    /*white-space: pre;*/
+}
+.csharpcode pre {
+    margin: 0em;
+}
+.csharpcode .rem {
+    color: #008000;
+}
+.csharpcode .kwrd {
+    color: #0000ff;
+}
+.kwrd11 {
+    color: #0000ff;
+}
+.csharpcode .str {
+    color: #a31515;
+}
+.csharpcode .op {
+    color: #0000c0;
+}
+.csharpcode .preproc {
+    color: #cc6633;
+}
+.csharpcode .asp {
+    background-color: #ffff00;
+}
+.csharpcode .html {
+    color: #800000;
+}
+.csharpcode .attr {
+    color: #ff0000;
+}
+.csharpcode .alt {
+    background-color: #f4f4f4;
+    width: 100%;
+    margin: 0em;
+}
+.csharpcode .lnum {
+    color: #606060;
+}
+span.comment {
+    color: #999;
+}
