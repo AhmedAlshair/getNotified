@@ -38,6 +38,10 @@
         <pre class="csharpcode">
 <span class="kwrd">&lt;</span><span class="html">script</span> <span class="attr">src</span><span class="kwrd">="jquery.js"</span><span class="kwrd">&gt;&lt;/</span><span class="html">script</span><span class="kwrd">&gt;</span>
 <span class="kwrd">&lt;</span><span class="html">script</span> <span class="attr">src</span><span class="kwrd"><span class="str"><span class="kwrd">="getNotified.js"</span>&gt;<span class="kwrd">&lt;/</span><span class="html">script</span><span class="kwrd">&gt;</span></pre>
+        
+        <p>Add a div having .getNotifiedBox class to your html code:</p>
+        <pre class="csharpcode">
+<span class="kwrd">&lt;</span><span class="html">div</span> <span class="attr">class</span><span class="kwrd">='getNotifiedBox'</span><span class="kwrd">&gt;&lt;/</span><span class="html">div</span><span class="kwrd">&gt;</span></pre>
 
         <p>In a script tag
             <<span class="html">script</span><span class="kwrd">&gt;</span> or in your page .js file, call the function getNotified(); for the target element</p>
@@ -65,7 +69,6 @@ $(".notify").<span class="kwrd11">getNotified({</span>
     </section>
     <section>
         <h2>Test GetNotified</h2>
-        <div class='getNotifiedBox'></div>
         <button class="notify">GetNotified Test</button>
         
         <h2>Get support and share your feedback</h2>
@@ -76,6 +79,9 @@ $(".notify").<span class="kwrd11">getNotified({</span>
     <footer>
         GetNotified jQuery Plugin - 2014
     </footer>
+    
+    <!--getNotified HTML code-->
+    <div class='getNotifiedBox'></div>
 
    
     <!--Scripts-->
