@@ -1,0 +1,62 @@
+
+/*// GetNotified Box Styling //*/
+
+.getNotifiedBox {
+    position: fixed;
+    left: 0;
+    width: 100%;
+    min-height: 10%;
+    padding: 2% 5% 3% 5%;
+    margin: -5px 0;
+    box-sizing: border-box;
+    color: #fff !important;
+    -webkit-transition-timing-function: ease;
+    transition-timing-function: ease;
+    overflow: hidden;
+    display: none;
+}
+
+.getNotifiedBox h1, .getNotifiedBox h2 {
+    color: #fff !important;
+}
+
+.getNotifiedBox h1 {
+    color: #fff !important;
+    font-size: 2rem;
+}
+
+.getNotifiedBox h2 {
+    color: #fff !important;
+    font-size: 1.4rem;
+}
+
+.getNotifiedBox.success {
+    position: fixed;
+    background-color: #18b139;
+    opacity: 0.98;
+}
+
+.getNotifiedBox.warning {
+    position: fixed;
+    background-color: #d30000;
+    opacity: 0.98;
+}
+
+.getNotifiedBox:before {
+    content: "X";
+    position: absolute;
+    right:4%;
+    top: 5%;
+    width: 20px;
+    height: 20px;
+    margin: 3% 0 3% 2%;
+    border: 2px solid rgba(255, 255, 255, 0.6);
+    border-radius: 50%;
+    text-align: center;
+    line-height: 17px;
+    vertical-align: middle;
+    color: rgba(255, 255, 255, 0.85);
+    font-family: Arial;
+    font-size: 11px;
+    cursor: pointer;
+}
