@@ -42,7 +42,7 @@ Add a ```div``` having ```.getNotifiedBox``` class to your html code:
 ```
 
 
-In a script tag ```<script>``` or in your page ```.js``` file, call the function getNotified(); for the target element
+In a script tag ```<script>``` or in your page ```.js``` file, call the function ```getNotified();``` for the target element
 
 ```javascript
 $(".notify").getNotified();
