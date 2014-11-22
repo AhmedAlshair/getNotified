@@ -69,4 +69,7 @@ $(".notify").getNotified({
 ```
 
 
+Your feedback and comments are appreciated..
+
+
 
