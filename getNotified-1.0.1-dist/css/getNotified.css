@@ -16,6 +16,8 @@
     display: none;
 }
 
+/*Box Contents Styles*/
+
 .getNotifiedBox h1, .getNotifiedBox h2 {
     color: #fff !important;
 }
@@ -30,6 +32,9 @@
     font-size: 1.4rem;
 }
 
+
+/*Box Types Styles*/
+
 .getNotifiedBox.success {
     position: fixed;
     background-color: #18b139;
@@ -41,6 +46,9 @@
     background-color: #d30000;
     opacity: 0.98;
 }
+
+
+/*Close Icon Style*/
 
 .getNotifiedBox:before {
     content: "X";

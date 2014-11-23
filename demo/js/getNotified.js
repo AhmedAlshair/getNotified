@@ -1,8 +1,15 @@
-(function ($) {
+/// getNotified v1.0.1 ///
+/// A simple lightweight jQuery plugin to view notifications in your web pages //
+/// https://github.com/AhmedAlShair/getNotified  ///
+
+
+//-------------------------------------------------------------------------------
+
+(function ($) {  // Code Start
 
     $.fn.getNotified = function (options) {
 
-        // Setting the default values for plugins options
+        // Setting the default values for plugins options object
         var defaults = {
             // Animation Speed
             velocity: 500,
@@ -21,7 +28,7 @@
         }
 
         // Extending user-options to the Defaults object (with merging "true")
-        $.extend(defaults, options);
+        $.extend(true, defaults, options);
         
         // Delay setTimeOut function variable definition
         var closeBox;
@@ -76,7 +83,7 @@
                 animateOut();
             });
                         
-        }  // DoNotify Function End
+        }  // DoNotify Function End //
         
         
 
@@ -97,61 +104,4 @@
 
 
     }
-})(jQuery);
-
-
-
-
-
-//
-//function Notify7(options) {
-//
-//// Animation Speed
-//    this.velocity = options.velocity;
-//
-//    // Notification position
-//    this.position = options.position;
-//
-//    // Notification h1 Title
-//    this.title = options.title;
-//
-//    // Notification h2 Title
-//    this.subtitle = options.subtitle;
-//
-//    // Notification Type: "success" or "warning"
-//    this.type = options.type;
-//
-//    // Selecting Notification Div by Class Name
-//    this.boxClass = options.boxClass;
-//  
-//
-//   var doNotify = function(e) {
-//          console.log(notify7Position);
-//
-//        notify7Box.html("<h1>" + notifyTitle + "</h1>" + "<h2>" + notifySubtitle + "</h2>");
-//        var notify7BoxHeight = notify7Box.height();
-//        console.log(notify7BoxHeight);
-//
-//        notify7Box.addClass(notify7Type).css(notify7Position, "-" + notify7BoxHeight * 2);
-//
-//        if (notify7Position == "bottom") {
-//            $(".notify7Box").show().animate({
-//                bottom: 0
-//            }, velocity);
-//        } else {
-//            $(".notify7Box").show().animate({
-//                top: 0
-//            }, velocity);
-//        }
-//
-//   }
-//   
-//   
-//    this.start = function() {
-//        // Assign Notify function to the Class "notify7"
-//        $(".notify7").on("click", function () {
-//            doNotify(e);
-//        });
-//    }
-//
-//}
+})(jQuery); // Code End
