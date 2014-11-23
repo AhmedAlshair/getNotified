@@ -1,13 +1,13 @@
-getNotified
-===========
+getNotified v1.0.1
+==================
 
-A simple and effective jQuery plugin to view notification on your website.
+A simple and effective jQuery plugin to view notifications on your website.
 
 
 Features
 --------
         
-   * Easy to integrate in your website pages.
+   * Lightweight, easy to integrate in your website pages.
    * All you need are two simple lines of code.
    * Felixible options to take control of what you need to show.
    * Separate stylesheet for the plugin, so you can edit styles easily.
@@ -27,11 +27,11 @@ Include the ```getNotified.css``` in your page:
 ```
 
 
-Include the ```getNotified.js``` after the jQuery script tag:
+Include the ```getNotified.js``` or ```getNotified.min.js``` after the jQuery script tag:
 
 ```html
 <script src="jquery.js"></script>
-<script src="getNotified.js"></script>
+<script src="getNotified.min.js"></script>
 ```
 
 
@@ -69,7 +69,15 @@ $(".notify").getNotified({
 ```
 
 
+getNotified Demo
+----------------
+
+[View Demo Page](demo/demo.html)
+
+
+
 Your feedback and comments are appreciated..
 
+Thank You
 
 
